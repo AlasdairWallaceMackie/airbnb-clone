@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins';
+}
+
+nav{
+    display: flex;
+    box-shadow: 0px 5px 5px rgb(0,0,0,0.1);
+    padding: 1rem;
+    height: 40px;
+}
+
+section{
+    padding: 2rem;
+}
+
+.hero img{
+    max-width: 100%;
+    margin-bottom: 1rem;
+}
+
+.card{
+    width: 175px;
+}
+.card img{
+    border-radius: 20px;
+}
+
+.text-light{
+    color: lightgray;
+}
