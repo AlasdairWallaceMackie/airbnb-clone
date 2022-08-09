@@ -1,4 +1,3 @@
-// import Logo from "../img/airbnb-logo.svg"
 import Logo from "../img/airbnb-logo.svg"
 
 export default function Navbar(){
