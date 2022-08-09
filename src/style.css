@@ -24,12 +24,26 @@ section{
 }
 
 .card{
-    width: 175px;
-}
-.card img{
+    width: 300px;
     border-radius: 20px;
+    box-shadow: 5px 5px 5px lightgray, -5px 0 5px lightgray;
+}
+.experience-cover-img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 100%;
+}
+.card-body{
+    padding: 10px;
 }
 
 .text-light{
     color: lightgray;
+}
+
+.experience-list{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
 }

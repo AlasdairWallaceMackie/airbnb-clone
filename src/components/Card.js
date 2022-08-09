@@ -3,12 +3,13 @@ import Star from "../img/star.png"
 export default function Card(props){
     return(
         <div className="card">
-            <img src={require(`../img/${props.img}`)}></img>
-            {/* <img src={Picture}></img> */}
+            <img src={require(`../img/${props.img}`)} className="experience-cover-img"></img>
             <br></br>
-            <span><img src={Star}></img> {props.rating} <span className="text-light align-middle">({props.reviewCount}) - {props.country}</span></span>
-            <p>{props.title}</p>
-            <p><strong>From ${props.price}</strong> / person</p>
+            <div className="card-body">
+                <span><img src={Star}></img> {props.rating} <span className="text-light align-middle">({props.reviewCount}) - {props.location}</span></span>
+                <p>{props.title}</p>
+                <p><strong>From ${props.price}</strong> / person</p>
+            </div>
         </div> 
     )
 }
