@@ -1,22 +1,32 @@
 import Navbar from "./components/Navbar"
 import Hero from "./components/Hero"
 import Card from "./components/Card"
-import Contacts from "./components/Contacts"
+
+import data from "./data"
 
 export default function App(){
+    const experienceCards = data.map(function(data){
+        return(
+            <Card
+                id = {data.id}
+                title = {data.title}
+                description = {data.description}
+                price = {data.price}
+                img = {data.coverImg}
+                rating = {data.stats.rating}
+                reviewCount = {data.stats.reviewCount}
+                location = {data.location}
+                openSpots = {data.openSpots}
+            />
+        )
+    })
     return(
         <div>
             <Navbar/>
             <Hero/>
-            <Card
-                img = "katie-zaferes.png"
-                rating = "5.0"
-                reviewCount = {6}
-                country = "USA"
-                title = "Life Lessons with Katie Zaferes"
-                price = {136}
-            />
-            {/* <Contacts/> */}
+            <div className="experience-list">
+                {experienceCards}
+            </div>
         </div>
     )
 }
