@@ -8,7 +8,7 @@ export default function App(){
     const experienceCards = data.map(function(data){
         return(
             <Card
-                id = {data.id}
+                key = {data.id}
                 title = {data.title}
                 description = {data.description}
                 price = {data.price}
