@@ -27,6 +27,7 @@ section{
     width: 300px;
     border-radius: 20px;
     box-shadow: 5px 5px 5px lightgray, -5px 0 5px lightgray;
+    margin-bottom: 1rem;
 }
 .experience-cover-img{
     border-top-left-radius: 20px;
@@ -46,4 +47,8 @@ section{
     justify-content: space-evenly;
     flex-wrap: wrap;
     margin-bottom: 2rem;
+}
+
+.align-middle{
+    vertical-align: middle;
 }
